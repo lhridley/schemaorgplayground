@@ -1,0 +1,36 @@
+uuid: 67efca77-1659-4bb4-8462-7a9e41b7949e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.redhen_org.company.field_ats_company_status
+    - redhen_org.redhen_org_type.company
+_core:
+  default_config_hash: uOS5PPxWTgWwy3ywJ9WVgp93OsAxfC2RWk9zkadwyYU
+id: redhen_org.company.default
+targetEntityType: redhen_org
+bundle: company
+mode: default
+content:
+  field_ats_company_status:
+    type: options_select
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

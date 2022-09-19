@@ -1,0 +1,31 @@
+uuid: bfca9300-f3be-4e1a-86ee-889b1bd59e33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.redhen_contact.field_ats_can_ownership
+    - redhen_contact.redhen_contact_type.candidate
+_core:
+  default_config_hash: F6iC5cM3dEoGeX5tgMmld0XhsadeF_u3kyMEzY6s-Wo
+id: redhen_contact.candidate.field_ats_can_ownership
+field_name: field_ats_can_ownership
+entity_type: redhen_contact
+bundle: candidate
+label: 'ATS Candidate Ownership'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

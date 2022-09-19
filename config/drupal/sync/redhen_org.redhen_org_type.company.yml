@@ -1,0 +1,8 @@
+uuid: 30e12626-7c3e-4908-83c3-689d5c2b6da4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Ng0yAyoeZgmOX5tB9Kij7PZtAdwQ6z73Z0dL_F0eAD8
+id: company
+label: Company

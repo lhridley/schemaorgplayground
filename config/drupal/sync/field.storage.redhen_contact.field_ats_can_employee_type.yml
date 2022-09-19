@@ -1,0 +1,22 @@
+uuid: 5c27b0af-8a25-43ec-bc79-51b734aa933a
+langcode: en
+status: true
+dependencies:
+  module:
+    - redhen_contact
+    - taxonomy
+_core:
+  default_config_hash: I25bsK_OXps3afLrL9CG20JR_BlzlmH5JOdOw-DLWHA
+id: redhen_contact.field_ats_can_employee_type
+field_name: field_ats_can_employee_type
+entity_type: redhen_contact
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

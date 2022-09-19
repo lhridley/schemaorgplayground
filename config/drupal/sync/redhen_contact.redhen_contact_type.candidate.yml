@@ -1,0 +1,8 @@
+uuid: 7f06ee7c-0317-4158-8992-1e6563b14de3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BEt01LeebRAU9iaeHkmRdmQpPEwmZyFJCnlY8IlLt8o
+id: candidate
+label: Candidate

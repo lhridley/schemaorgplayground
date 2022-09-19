@@ -1,0 +1,104 @@
+uuid: 3ff796e8-2a68-4f7c-810a-c35934c02e78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.redhen_contact.candidate.field_ats_can_country
+    - field.field.redhen_contact.candidate.field_ats_can_employee_type
+    - field.field.redhen_contact.candidate.field_ats_can_ownership
+    - field.field.redhen_contact.candidate.field_ats_can_source
+    - field.field.redhen_contact.candidate.field_ats_can_status
+    - redhen_contact.redhen_contact_type.candidate
+  module:
+    - country
+_core:
+  default_config_hash: psCiGX5ioUlJok2a7DM1JmqedTn5fab9rbZa8P6JSzw
+id: redhen_contact.candidate.default
+targetEntityType: redhen_contact
+bundle: candidate
+mode: default
+content:
+  email:
+    type: email_default
+    weight: -4
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_ats_can_country:
+    type: country_default
+    weight: 25
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ats_can_employee_type:
+    type: options_select
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ats_can_ownership:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ats_can_source:
+    type: options_select
+    weight: 23
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ats_can_status:
+    type: options_select
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  first_name:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  last_name:
+    type: string_textfield
+    weight: -8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  middle_name:
+    type: string_textfield
+    weight: -9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

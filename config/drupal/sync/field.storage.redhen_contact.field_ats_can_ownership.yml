@@ -1,0 +1,22 @@
+uuid: e088652f-01da-492e-867a-b25714335624
+langcode: en
+status: true
+dependencies:
+  module:
+    - redhen_contact
+    - user
+_core:
+  default_config_hash: l5wxMZ8pbDtFgtdWt-mhrTbs_SthivOI3wtvsDDho3s
+id: redhen_contact.field_ats_can_ownership
+field_name: field_ats_can_ownership
+entity_type: redhen_contact
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: e247f5d7-e789-4b17-b535-4b621fe627e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.redhen_contact.field_ats_can_source
+    - redhen_contact.redhen_contact_type.candidate
+    - taxonomy.vocabulary.ats_candidate_source
+_core:
+  default_config_hash: eW7iSoO0wO9w0D63zV_5Ss17LKiEr3rX2FfHEzT7l_g
+id: redhen_contact.candidate.field_ats_can_source
+field_name: field_ats_can_source
+entity_type: redhen_contact
+bundle: candidate
+label: 'ATS Candidate Source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ats_candidate_source: ats_candidate_source
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

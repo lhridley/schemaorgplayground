@@ -1,0 +1,31 @@
+uuid: 0f4b7739-ae62-45d5-a1e9-1c0efaaf1193
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.redhen_org.field_ats_company_status
+    - redhen_org.redhen_org_type.company
+    - taxonomy.vocabulary.ats_company_status
+_core:
+  default_config_hash: rBppZHmgp2Zhc2_WM3KLJsVgYj1OWi2rUoeGLm0wtao
+id: redhen_org.company.field_ats_company_status
+field_name: field_ats_company_status
+entity_type: redhen_org
+bundle: company
+label: 'ATS Company status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ats_company_status: ats_company_status
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

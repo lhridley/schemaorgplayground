@@ -1,0 +1,18 @@
+_core:
+  default_config_hash: jEXZsrgdvtYGXDQuvNfzXFlq7EznLySGCnqDskwrl9o
+dependencies:
+  enforced:
+    module:
+      - redhen_contact
+unique_email: true
+required_properties:
+  first_name: first_name
+  middle_name: null
+  last_name: last_name
+connect_users: false
+embed_on_user_form: false
+alter_username: true
+registration: true
+registration_type: null
+registration_link: null
+registration_update: null

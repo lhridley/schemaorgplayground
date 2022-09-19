@@ -1,0 +1,24 @@
+#!/bin/bash
+## Description: Run installation sequences in the web container
+## Usage: install
+## Example: "ddev install"
+function log() {
+  echo -e "\033[94m$(date +'%F %T')\033[39m $1"
+}
+
+log "\e[36m--------- Running installation sequences ---------\e[39m"
+
+log "Go to the project root."
+cd "${PWD}" || exit 1;
+
+log "Installing composer dependencies (with development dependencies)."
+composer install --no-interaction --no-progress --apcu-autoloader || exit 1;
+log "Composer packages are installed"
+
+log "Running site installation."
+drush si --existing-config -y || exit 1;
+log "Site installation is finished"
+
+drush uli
+
+log "\e[36m--------- Installation sequences are completed ---------\e[39m"

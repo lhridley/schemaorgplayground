@@ -1,0 +1,78 @@
+uuid: 7b83d613-890e-4e8e-9bd2-3a0f0076c8d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.redhen_contact.candidate.field_ats_can_country
+    - field.field.redhen_contact.candidate.field_ats_can_employee_type
+    - field.field.redhen_contact.candidate.field_ats_can_ownership
+    - field.field.redhen_contact.candidate.field_ats_can_source
+    - field.field.redhen_contact.candidate.field_ats_can_status
+    - redhen_contact.redhen_contact_type.candidate
+  module:
+    - country
+_core:
+  default_config_hash: l6yAcCvo2KmYPWgN5Dt79YCOTSVxWDk-oanz-524iDk
+id: redhen_contact.candidate.default
+targetEntityType: redhen_contact
+bundle: candidate
+mode: default
+content:
+  email:
+    type: email_mailto
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  field_ats_can_country:
+    type: country_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_ats_can_employee_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_ats_can_ownership:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_ats_can_source:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_ats_can_status:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  uid:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  first_name: true
+  last_name: true
+  middle_name: true

@@ -1,0 +1,10 @@
+uuid: 01d739c8-8904-4469-b738-8f5c039b6955
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: H2QZd5oeX76-3BYUGgNw59n-o9rwxJUy5pE6dt-ccFI
+name: 'ATS Candidate Status'
+vid: ats_candidate_status
+description: 'Taxonomy terms for ATS Candidate Status'
+weight: 0

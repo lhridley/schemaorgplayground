@@ -1,0 +1,24 @@
+uuid: 013bea08-972c-485b-ae31-7c2882fa609c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.redhen_org.company.field_ats_company_status
+    - redhen_org.redhen_org_type.company
+_core:
+  default_config_hash: '-FhP1GUZutcmMf7XrF4LQzVC7eDAPHhceleim_dhUEQ'
+id: redhen_org.company.default
+targetEntityType: redhen_org
+bundle: company
+mode: default
+content:
+  field_ats_company_status:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  name: true

@@ -1,0 +1,10 @@
+uuid: 8866ab81-910c-46a9-8333-95f5383c8b7f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NYOCzeLSsfI_hrfbpYaOre8M7Eb5qyXm0k76VFk6nE4
+name: 'ATS Employee Type'
+vid: ats_employee_type
+description: 'Taxonomy terms for ATS Employee Type'
+weight: 0

@@ -1,0 +1,10 @@
+uuid: d4058475-9aac-4376-bae5-fb27de755899
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: z-pEMdxrsM-NjLzHDg6DaIgyq7Wuxe291y5RZigKA-0
+name: 'ATS Company Status'
+vid: ats_company_status
+description: ''
+weight: 0

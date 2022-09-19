@@ -1,0 +1,22 @@
+uuid: 0bba858e-fd78-4368-896b-bea3c5e79067
+langcode: en
+status: true
+dependencies:
+  module:
+    - country
+    - redhen_contact
+_core:
+  default_config_hash: zZQos0MB18VC3yVPf95IQrylRO98LZFAxScba2i9NGk
+id: redhen_contact.field_ats_can_country
+field_name: field_ats_can_country
+entity_type: redhen_contact
+type: country
+settings:
+  selectable_countries: {  }
+module: country
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

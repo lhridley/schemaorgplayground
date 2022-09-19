@@ -1,0 +1,10 @@
+uuid: eb79189f-4b0e-48e5-9b03-a6fe1feef32f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JtMtaGv810FYVWbUPWAAnvX-4rc8OMmGbdxsxHS9Dn8
+name: 'ATS Candidate Source'
+vid: ats_candidate_source
+description: 'Taxonomy terms for ATS Candidate Source'
+weight: 0

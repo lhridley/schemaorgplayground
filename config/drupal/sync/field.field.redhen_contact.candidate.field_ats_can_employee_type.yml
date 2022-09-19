@@ -1,0 +1,31 @@
+uuid: e4dbbc19-a3da-493c-80fe-c2cc778b79e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.redhen_contact.field_ats_can_employee_type
+    - redhen_contact.redhen_contact_type.candidate
+    - taxonomy.vocabulary.ats_employee_type
+_core:
+  default_config_hash: _QE1R7QvAVE-ij98itqJkgG4mwDR5xQSFbaBvpkZNcA
+id: redhen_contact.candidate.field_ats_can_employee_type
+field_name: field_ats_can_employee_type
+entity_type: redhen_contact
+bundle: candidate
+label: 'ATS Candidate Employee Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ats_employee_type: ats_employee_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

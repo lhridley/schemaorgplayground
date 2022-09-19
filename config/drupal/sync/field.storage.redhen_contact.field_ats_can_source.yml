@@ -1,0 +1,22 @@
+uuid: bf9198e2-3ceb-478d-8cb5-4875a08fb16d
+langcode: en
+status: true
+dependencies:
+  module:
+    - redhen_contact
+    - taxonomy
+_core:
+  default_config_hash: isychgNsnZSvujT9X9wDipn1huDEyx_kNh6DrClf0JI
+id: redhen_contact.field_ats_can_source
+field_name: field_ats_can_source
+entity_type: redhen_contact
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

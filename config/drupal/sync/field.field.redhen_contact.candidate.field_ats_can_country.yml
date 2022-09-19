@@ -1,0 +1,24 @@
+uuid: bdc12e19-36c7-4cad-9981-ea705eae3bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.redhen_contact.field_ats_can_country
+    - redhen_contact.redhen_contact_type.candidate
+  module:
+    - country
+_core:
+  default_config_hash: gkf3BXUoTn3jVDzLjsy95y-by3d5zP8C3-FQmNbigBs
+id: redhen_contact.candidate.field_ats_can_country
+field_name: field_ats_can_country
+entity_type: redhen_contact
+bundle: candidate
+label: 'ATS Candidate Country'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selectable_countries: {  }
+field_type: country
