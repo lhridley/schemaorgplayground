@@ -40,6 +40,8 @@
         "drupal/core-recommended": "9.4.x-dev",
         "drupal/country": "^1.0",
         "drupal/entity": "^1.4",
+        "drupal/gin": "^3.0@beta",
+        "drupal/gin_toolbar": "^1.0@beta",
         "drupal/paragraphs": "^1.15",
         "drupal/redhen": "^1.0@RC",
         "drupal/schemadotorg": "1.0.x-dev",
